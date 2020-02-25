@@ -1,0 +1,14 @@
+version: '3.6'
+
+services:
+
+  jupyterhub:
+    image: tonichaz/scipy-jupyterlab
+    ports:
+      - "8888:8888"
+    environment:
+      - JUPYTER_ENABLE_LAB=yes
+      - GRANT_SUDO=yes
+    user: root
+    volumes:
+      - ./work:/home/jovyan/work:z
