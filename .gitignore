@@ -269,3 +269,7 @@ $RECYCLE.BIN/
 # End of https://www.gitignore.io/api/osx,linux,python,windows,intellij
 *.pkl
 *.vec
+
+# Custom
+work/covid-19/input/
+
